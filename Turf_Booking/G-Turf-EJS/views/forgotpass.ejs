@@ -1,0 +1,28 @@
+
+<%-include("partials/header",{wcls:"active",licls:"",locls:"active"})-%>
+<div class="container">
+    <div class="my-form login" style="flex-direction: column;">
+        <form method="post">
+            <h2>Change Password</h2>
+            <div class="input-cont-login">
+                <input type="text" name="email" required autocomplete="off">
+                <label for="">Email</label>
+            </div>
+            <div class="input-cont-login">
+                
+                <input type="password" name="password" id="password" required>
+                <img id="pass-icon" src="/images/password-see.png" alt="password-toogle">
+                <label for="">New Password</label>
+            </div>
+            <div class="input-cont-login">
+                
+                <input type="password" name="cpassword" id="cpassword" required>
+                <img id="pass-icon1" src="/images/password-see.png" alt="password-toogle">
+                <label for="">Retype your Password</label>
+            </div>
+            <button id="buton" type="submit" style="width: 280px;">Confirm</button>
+        </form>
+    </div>
+
+</div>
+<%-include("partials/footer")-%>

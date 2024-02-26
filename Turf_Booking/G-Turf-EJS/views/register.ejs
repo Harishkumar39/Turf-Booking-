@@ -1,0 +1,41 @@
+
+<%-include("partials/header",{wcls:"active",licls:"",locls:"active"})-%>
+<div class="container">
+    <div class="my-form register">
+            
+        <form method="post">
+            <h2>Register</h2>
+            <div class="input-cont-register">
+                <input type="text" name="fname" required autocomplete="off" required>
+                <label for="">First Name</label>
+                
+            </div>
+            <div class="input-cont-register">
+                <input type="text" name="lname" required autocomplete="off" required>
+                <label for="">Last Name</label>
+            </div>
+            <div class="input-cont-register">
+                <input type="text" name="number" required autocomplete="off" required>
+                <label for="">Mobile Number</label>
+            </div>
+            <div class="input-cont-register">
+                <input type="text" name="email" required autocomplete="off" required>
+                <label for="">Email</label>
+            </div>
+            <div class="input-cont-register">
+                <input type="password" name="password" id="password" required>
+                <img id="pass-icon" src="/images/password-see.png" alt="password-toogle">
+                <label for="">Password</label>
+            </div>
+            <div class="forgot">
+                <label for=""><input type="checkbox" name="check" id="check" required> I accept to the<a href="https://www.termsandconditionsgenerator.com/live.php?token=YBDEEeoU9DIyKYgQue4Ka3FnalnAIN9D" target="_blank">Terms & conditions</a>. </label>  
+                
+            </div>
+            <button id="buton" type="submit">Register</button>
+            <div class="register-link">
+                <label for="">Already have an account? <a class="login-link" href="/login">Login</a></label>
+            </div>
+        </form>
+    </div>
+</div>
+<%-include("partials/footer")-%>

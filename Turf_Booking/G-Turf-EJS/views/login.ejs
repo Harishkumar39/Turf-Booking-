@@ -1,0 +1,33 @@
+
+<%-include("partials/header",{wcls:wcls,licls:licls,locls:locls})-%>
+
+<div class="container">
+    <div class="my-form login">
+        
+        <form method="post">
+            <h2>Login</h2>
+            <div class="input-cont-login">
+                <input type="text" name="email" required autocomplete="off">
+                <label>Email</label>
+            </div>
+            <div class="input-cont-login">
+                
+                <input type="password" name="password" id="password" required>
+                <img id="pass-icon" src="/images/password-see.png" alt="password-toogle">
+                <label>Password</label>
+                
+            </div>
+            <div class="forgot">
+                
+                <!-- <label><input type="checkbox" name="check" id="check"> Remember me |</label>   -->
+                <a href="/forgotpass"> Forgot Password</a>
+    
+            </div>
+            <button id="buton" type="submit" >Login</button>
+            <div class="signup">
+                <label>Don't have an account? <a class="signup-link" href="/register">Register</a></label>
+            </div>
+        </form>
+    </div>
+</div>
+<%-include("partials/footer")-%>

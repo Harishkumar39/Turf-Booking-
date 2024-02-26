@@ -1,0 +1,27 @@
+<%-include("partials/header",{wcls:wcls,licls:licls,locls:locls})-%>
+<div class="container">
+    
+    <div class="about">
+        <div class="city">
+            <form action="/weather" method="post">
+                <input type="text" name="city" id="city" placeholder="Enter your locality" autocomplete="off">
+                <button id="buton" type="submit">Search</button>
+            </form>
+        </div>
+        
+        <%for(var i=0;i<datas.list.length;i++){%>
+            <div class="child" style="border: 1px solid white;">
+                <!-- <h3>Location</h3> -->
+                <h3>Status<p style="float: right;"><%=datas.list[i].weather[0].main%></p></h3>
+                <h3>Date & Time <p style="float: right;"><%=datas.list[i].dt_txt%></p></h3>
+                
+            </div>
+        <%}%>
+    </div>
+    
+        
+    
+    
+</div>
+
+<%-include("partials/footer")-%>

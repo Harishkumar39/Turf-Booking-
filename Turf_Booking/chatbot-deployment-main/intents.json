@@ -1,0 +1,225 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "check_availability",
+      "patterns":[
+        "Is the turf available on {date}?",
+        "What slots are open on {day}?"
+      ],
+      "responses":[
+        "Let me check the availability for {date}.",
+        "Sure, I can help you with that. What date are you interested in?"
+      ]
+    },
+    {
+      "tag": "book_turf",
+      "patterns":[
+        "I'd like to book the turf for {date} at {time}.",
+        "Book the turf for {day} at {time}."
+      ],
+      "responses":[
+        "Great! I've booked the turf for you on {date} at {time}.",
+        "Your turf booking for {date} at {time} is confirmed."
+      ]
+    },
+    {
+      "tag": "check_rates",
+      "patterns":[
+        "How much does it cost to book the turf for {duration}?",
+        "What are the charges for a {day} booking?",
+        "what is the price for {duration}"
+      ],
+      "responses":[
+        "The booking fee for {duration} is {price}.",
+        "The cost for {duration} on {day} is {price}."
+
+      ]
+    },
+    {
+      "tag": "location_info",
+      "patterns":[
+        "Where is the turf located?",
+        "What's the address of the turf facility?"
+      ],
+      "responses":[
+        "The turf is located at {address}.",
+        "The address of the turf facility is {address}."
+      ]
+    },
+    {
+      "tag": "amenities_info",
+      "patterns":[
+        "What facilities are available at the turf?",
+        "Do you provide equipment like {equipment}?"
+      ],
+      "responses":[
+        "We offer {amenities} at the turf, including {equipment}.",
+        "Yes, we provide {equipment} for use at the turf."
+      ]
+    },
+    {
+      "tag": "booking_confirmation",
+      "patterns":[
+        "Can you send me a confirmation for my booking on {date} at {time}?",
+        "Please email me the details of my reservation."
+      ],
+      "responses":[
+        "Sure! I've sent a confirmation email for your booking on {date} at {time}.",
+        "You should receive a confirmation email shortly."
+      ]
+    },
+    {
+      "tag": "cancel_booking",
+      "patterns":[
+        "I need to cancel my reservation for {date}.",
+        "Cancel my booking for {day} at {time}."
+      ],
+      "responses":[
+        "Sure, I've canceled your booking for {date} at {time}.",
+        "Your booking for {date} has been canceled."
+      ]
+    },
+    {
+      "tag": "confirm_booking",
+      "patterns": [
+        "Yes",
+        "Sure",
+        "I confirm",
+        "Book it",
+        "Yes, please",
+        "Alright"
+      ],
+      "responses": [
+        "Great! Your booking is confirmed.",
+        "Thank you for confirming. Your booking is now confirmed.",
+        "Excellent! Your booking has been successfully confirmed.",
+        "Perfect! Your booking is confirmed."
+      ]
+    },
+    {
+      "tag": "RetrieveLocationAndDirection",
+      "patterns": [
+        "What's the location of nearby turfs?",
+        "Tell me where the nearby turfs are.",
+        "What are the turfs located?",
+        "Nearby turfs?"
+
+      ],
+      "responses": [
+        "Sure! The location of nearby turfs is {location}.",
+        "You can find the nearby turfs at {location}.",
+        "Theses are the nearby turfs {location}."
+      ]
+    },
+    {
+      "tag": "book_by_turf_name",
+      "patterns": [
+        "Book the {turf_name} turf.",
+        "I'd like to book the {turf_name} turf.",
+        "I want to reserve the {turf_name} turf.",
+        "Can I book the {turf_name} turf?"
+      ],
+      "responses": [
+        "Sure! I'll help you book the {turf_name} turf.",
+        "Great choice! Let's book the {turf_name} turf for you.",
+        "You got it! Booking the {turf_name} turf now."
+
+      ]
+    },
+    {
+      "tag": "best_suggestions",
+      "patterns": [
+        "Can you suggest some highly-rated turfs?",
+        "Which turfs have the best ratings?",
+        "What are the top-rated turfs?"
+      ],
+      "responses": [
+        "Sure! Here are some highly-rated turfs:",
+        "Certainly! Check out these top-rated turfs:",
+        "Absolutely! I recommend these highly-rated turfs:"
+      ]
+    }
+
+
+  ]
+}

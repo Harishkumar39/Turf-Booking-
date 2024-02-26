@@ -1,0 +1,52 @@
+<%-include("partials/header",{wcls:"",licls:"active",locls:""})-%>
+
+
+    <div class="container">
+        <div class="home">
+            <% cards.forEach((card) => { %>
+            <div class="card" style="width: 18rem;">
+                <img src= "/images/background.jpg" class="card-img-top" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title"><%= card.Name %></h5>
+                    <p class="card-text"><%= card.Address %></p><br>
+                    <p class = "card-text"><b><%= card.Status_Open%></b></p>
+                    <p class="card-text"><b>Rating</b> : <%= card.Rating%></p>
+                    <a href="/home/<%=card.Name%>" class="btn btn-primary">Book</a>
+                </div>
+            </div>
+            <% }); %>
+
+        </div>
+        <div class="pagination">
+        <% for(let i = 1; i <= 13; i++) { %>
+            <a href="/home/<%= i %>" class="<%= i === pageNum ? 'active' : '' %>"><%= i %></a>
+        <% } %>
+        </div>
+        <div class="c_container">
+
+            <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. This is G-TURF. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>Welcome chief. How can I help you</div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="/images/chatbox-icon.svg" /></button>
+            </div>
+        </div>
+        </div>
+    </div>
+<%-include("partials/footer")-%>

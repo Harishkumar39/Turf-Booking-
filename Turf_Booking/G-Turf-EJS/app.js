@@ -352,13 +352,13 @@ function mailing(email, mailSubject, mailText){
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'harish7299152036@gmail.com',
-            pass: 'apbjwxhcnfytqixv'
+            user: 'Your Email',
+            pass: 'Your Password'
         }
     });
     
     const mailOptions = {
-      from: 'harish7299152036@gmail.com',
+      from: 'Your Email',
       to: email,
       subject: mailSubject ,
       text: mailText
